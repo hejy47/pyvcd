@@ -403,6 +403,7 @@ class _TokenizerState:
             48 <= c <= 57  # '0' - '9'
             or 65 <= c <= 90  # 'A' - 'Z'
             or 97 <= c <= 122  # 'a' - 'z'
+            or c == 91 or c == 93 # '[' or ']'
             or c == 95  # '_'
             or c == 36  # '$'
             or c == 46  # '.' not in spec, but seen in the wild
